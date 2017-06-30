@@ -1,0 +1,113 @@
+﻿<div class="box-container  mb20">
+    
+
+    <section>
+
+        <h2>1. Hidden fields</h2>
+        <p>
+            The following fields can be hidden, those are the ones that will be serialized and sent to the back end to be processed.<br />
+            You can add and remove the ones you don't need, this is just an example.<br />
+            The current ones fit most of the projects.
+        </p>
+
+        <div class="filters hide js-filtes-wrapper">
+            <div class="inputs-wrap">
+                <input class="input-wrap-item" type="text" name="event" id="input_event" data-default="reloadResults" value="reloadResults" />
+                <span class="input-wrap-item btn">Event</span>
+            </div>
+            <div class="inputs-wrap">
+                <input class="input-wrap-item" type="text" name="currentPagePiD" id="input_currentPagePiD" data-default="0123456789" value="0123456789" />
+                <span class="input-wrap-item btn">currentPagePiD</span>
+            </div>
+            <div class="inputs-wrap">
+                <input class="input-wrap-item" type="text" name="parentFolderPiD" id="input_parentFolderPiD" data-default="" value="" />
+                <span class="input-wrap-item btn">parentFolderPiD</span>
+            </div>
+            <div class="inputs-wrap">
+                <input class="input-wrap-item js-multiple-values" type="text" name="categoriesPiD" id="input_categoriesPiD" data-default="" value="" />
+                <span class="input-wrap-item btn">categoriesPiD</span>
+            </div>
+            <div class="inputs-wrap">
+                <input class="input-wrap-item js-multiple-values" type="text" name="authorPiD" id="input_authorPiD" data-default="" value="" />
+                <span class="input-wrap-item btn">authorPiD</span>
+            </div>
+            <div class="inputs-wrap">
+                <input class="input-wrap-item js-multiple-values" type="text" name="tagsPiDs" id="input_tagsPiDs" data-default="" value="" />
+                <span class="input-wrap-item btn">tagsPiDs</span>
+            </div>
+            <div class="inputs-wrap">
+                <input class="input-wrap-item js-multiple-values" type="text" name="queryString" id="input_queryString" data-default="" value="" />
+                <span class="input-wrap-item btn">queryString</span>
+            </div>
+            <div class="inputs-wrap">
+                <input class="input-wrap-item js-multiple-values" type="text" name="assetType" id="input_assetType" data-default="" value="" />
+                <span class="input-wrap-item btn">queryString</span>
+            </div>
+            <div class="inputs-wrap">
+                <input class="input-wrap-item js-multiple-values" type="text" name="orderBy" id="input_orderBy" data-default="" value="" />
+                <span class="input-wrap-item btn">orderBy</span>
+            </div>
+            <div class="inputs-wrap">
+                <input class="input-wrap-item js-multiple-values" type="text" name="take" id="input_take" data-default="8" value="8" />
+                <span class="input-wrap-item btn">take</span>
+            </div>
+            <div class="inputs-wrap">
+                <input class="input-wrap-item js-multiple-values" type="text" name="skip" id="input_skip" data-default="0" value="0" />
+                <span class="input-wrap-item btn">skip</span>
+            </div>
+        </div>
+
+        <div class="clearfix mb40"></div>
+
+        <p>This is the code for the hidden filters you should put in the body of your project.</p>
+
+        <pre class='prettyprint lang-html'>
+        &lt;div class="filters hide js-filtes-wrapper"&gt;
+&lt;input type="hidden" name="event" id="input_event" data-default="reloadResults" value="reloadResults" /&gt;
+&lt;input type="hidden" name="currentPagePiD" id="input_currentPagePiD" data-default="" value="" /&gt;
+&lt;input type="hidden" name="parentFolderPiD" id="input_parentFolderPiD" data-default="" value="" /&gt;
+&lt;input type="hidden" name="categoriesPiD" id="input_categoriesPiD" class="js-multiple-values" data-default="" value="" /&gt;
+&lt;input type="hidden" name="authorPiD" id="input_authorPiD" data-default="" value="" /&gt;
+&lt;input type="hidden" name="tagsPiDs" id="input_tagsPiDs" class="js-multiple-values" data-default="" value="" /&gt;
+&lt;input type="hidden" name="queryString" id="input_queryString" data-default="" value="" /&gt;
+&lt;input type="hidden" name="assetType" id="input_assetType" class="js-multiple-values" data-default="" value="" /&gt;
+&lt;input type="hidden" name="orderBy" id="input_orderBy" data-default="" value="" /&gt;
+&lt;input type="hidden" name="take" id="input_take" data-default="8" value="8" /&gt;
+&lt;input type="hidden" name="skip" id="input_skip" data-default="0" value="0" /&gt;
+            &lt;/div&gt;</pre>
+
+
+        <div class="clearfix"></div>
+    </section>
+    <div class="clearfix mb40"></div>
+    <section>
+
+        <h2>2. Types of triggers</h2>
+        
+        <ul>
+            <li>
+                <p><strong>Click</strong></p>
+                <p>
+                    <a href="javascript: void(0);" class="btn js-click-filter-trigger active-filter" data-value="" data-target="categoriesPiD">All categories</a>
+                    <a href="javascript: void(0);" class="btn js-click-filter-trigger" data-value="cat1PID" data-target="categoriesPiD">Category 1</a>
+                    <a href="javascript: void(0);" class="btn js-click-filter-trigger" data-value="cat2PID" data-target="categoriesPiD">Category 2</a>
+                </p>
+            </li>
+            <li>
+                <p><strong>Change</strong></p>
+                <p>Parent folder example:<br />
+                    <select class="js-change-filter-trigger" data-target="parentFolderPiD">
+                        <option value="">All folders</option>
+                        <option value="parentFolder1PID">parent Folder 1</option>
+                        <option value="parentFolder2PID">parent Folder 2</option>
+                    </select>
+                </p>
+            </li>
+        </ul>
+
+
+
+        <div class="clearfix"></div>
+    </section>
+
+</div>

@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1683ABC-FA04-4393-8695-80F2B3ECBA31}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HappyCorp</RootNamespace>
+    <AssemblyName>HappyCorp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="bundleconfig.json" />
+    <Content Include="assets\images\map\Thumbs.db" />
+    <Content Include="assets\images\Thumbs.db" />
+    <Content Include="assets\scripts\_sgbak\functions.js.1107428.15.2014-10-24.12-17-09.3331" />
+    <Content Include="assets\scripts\_sgbak\main.js.1112655.9.2014-11-14.14-57-37.8225" />
+    <Content Include="assets\styles\components\icons\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\styles\components\icons\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\styles\components\icons\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\styles\components\icons\fonts\FontAwesome.otf" />
+    <Content Include="assets\styles\components\modules\_accordion.scss" />
+    <Content Include="assets\styles\components\modules\_forms.scss" />
+    <Content Include="assets\styles\components\modules\_impulses.scss" />
+    <Content Include="assets\styles\components\modules\_lightbox.scss" />
+    <Content Include="assets\styles\components\modules\_navs.scss" />
+    <Content Include="assets\styles\components\modules\_nestedNav.scss" />
+    <Content Include="assets\styles\components\modules\_notifications.scss" />
+    <Content Include="assets\styles\components\modules\_sgbak\_dropdownNav.scss.1112444.2.2014-11-04.11-15-32.2228" />
+    <Content Include="assets\styles\components\modules\_sgbak\_dropdownNav.scss.1112444.2.2014-11-06.16-55-21.0524" />
+    <Content Include="assets\styles\components\modules\_sgbak\_slider.scss.1112445.2.2014-11-06.16-55-21.0654" />
+    <Content Include="assets\styles\components\modules\_shareTools.scss" />
+    <Content Include="assets\styles\components\modules\_slider.scss" />
+    <Content Include="assets\styles\components\modules\_tabs.scss" />
+    <Content Include="assets\styles\components\modules\_tooltips.scss" />
+    <Content Include="assets\styles\components\_animations.scss" />
+    <Content Include="assets\styles\components\_font.scss" />
+    <Content Include="assets\styles\components\_global.scss" />
+    <Content Include="assets\styles\components\_grid.scss" />
+    <Content Include="assets\styles\components\_hacks.scss" />
+    <Content Include="assets\styles\components\_helpers.scss" />
+    <Content Include="assets\styles\components\_jqueryUI.scss" />
+    <Content Include="assets\styles\components\_modules.scss" />
+    <Content Include="assets\styles\components\_resets.scss" />
+    <Content Include="assets\styles\main.css.map" />
+    <Content Include="assets\styles\main.scss" />
+    <Content Include="assets\styles\_custom.scss" />
+    <Content Include="assets\styles\_variables.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\images\Alamillo´s logo.png" />
+    <Content Include="assets\images\festival-arenal-sound.jpg" />
+    <Content Include="assets\images\festival.jpg" />
+    <Content Include="assets\images\gstring_logo.png" />
+    <Content Include="assets\images\gstring_logo_n.png" />
+    <Content Include="assets\images\largeSpinner.gif" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\map\icon-factories.png" />
+    <Content Include="assets\images\map\icon-global.png" />
+    <Content Include="assets\images\map\icon-workers.png" />
+    <Content Include="assets\images\map\marker-active-icon-accessories.png" />
+    <Content Include="assets\images\map\marker-active-icon-clothing.png" />
+    <Content Include="assets\images\map\marker-active-icon-drink.png" />
+    <Content Include="assets\images\map\marker-active-icon-drinks.png" />
+    <Content Include="assets\images\map\marker-active-icon-food.png" />
+    <Content Include="assets\images\map\marker-active-icon-footware.png" />
+    <Content Include="assets\images\map\marker-active-icon-footwear.png" />
+    <Content Include="assets\images\map\marker-active-icon-household.png" />
+    <Content Include="assets\images\map\marker-cluster.png" />
+    <Content Include="assets\images\map\marker-icon-accessories.png" />
+    <Content Include="assets\images\map\marker-icon-clothing.png" />
+    <Content Include="assets\images\map\marker-icon-drink.png" />
+    <Content Include="assets\images\map\marker-icon-drinks.png" />
+    <Content Include="assets\images\map\marker-icon-food.png" />
+    <Content Include="assets\images\map\marker-icon-footware.png" />
+    <Content Include="assets\images\map\marker-icon-footwear.png" />
+    <Content Include="assets\images\map\marker-icon-household.png" />
+    <Content Include="assets\images\map\pt-b-accessories.png" />
+    <Content Include="assets\images\map\pt-b-clothing.png" />
+    <Content Include="assets\images\map\pt-b-drink.png" />
+    <Content Include="assets\images\map\pt-b-drinks.png" />
+    <Content Include="assets\images\map\pt-b-food.png" />
+    <Content Include="assets\images\map\pt-b-footwear.png" />
+    <Content Include="assets\images\map\pt-b-household.png" />
+    <Content Include="assets\images\map\pt-b-household.png.png" />
+    <Content Include="assets\images\map\pt-w-accessories.png" />
+    <Content Include="assets\images\map\pt-w-clothing.png" />
+    <Content Include="assets\images\map\pt-w-drink.png" />
+    <Content Include="assets\images\map\pt-w-drinks.png" />
+    <Content Include="assets\images\map\pt-w-food.png" />
+    <Content Include="assets\images\map\pt-w-footwear.png" />
+    <Content Include="assets\images\map\pt-w-household.png" />
+    <Content Include="assets\images\no-image.png" />
+    <Content Include="assets\images\overlay-bg.png" />
+    <Content Include="assets\images\samples\960x600.png" />
+    <Content Include="assets\images\skyCorpScreenShot.jpg" />
+    <Content Include="assets\images\smallSpinner.gif" />
+    <Content Include="assets\scripts\functions.js" />
+    <Content Include="assets\scripts\gstring.js" />
+    <Content Include="assets\scripts\gstring.min.js" />
+    <Content Include="assets\scripts\lib\filters.js" />
+    <Content Include="assets\scripts\lib\form-customizer.js" />
+    <Content Include="assets\scripts\lib\iosslider.js" />
+    <Content Include="assets\scripts\lib\jquery-ui.min.js" />
+    <Content Include="assets\scripts\lib\jquery.js" />
+    <Content Include="assets\scripts\lib\map.js" />
+    <Content Include="assets\scripts\lib\map_libs.js" />
+    <Content Include="assets\scripts\lib\sticky.js" />
+    <Content Include="assets\scripts\lib\text-ellipsis.js" />
+    <Content Include="assets\scripts\lib\validation.js" />
+    <Content Include="assets\scripts\lib\vertical-center.js" />
+    <Content Include="assets\scripts\main.js" />
+    <Content Include="assets\scripts\pre.js" />
+    <Content Include="assets\styles\components\icons\css\font-awesome-ie7.css" />
+    <Content Include="assets\styles\components\icons\css\font-awesome.min.css" />
+    <Content Include="assets\styles\components\icons\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\styles\images\ui-icons_444444_256x240.png" />
+    <Content Include="assets\styles\images\ui-icons_777620_256x240.png" />
+    <Content Include="assets\styles\images\ui-icons_777777_256x240.png" />
+    <Content Include="assets\styles\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="assets\styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="assets\styles\images\ui-icons_FFF_256x240.png" />
+    <Content Include="assets\styles\main.css" />
+    <Content Include="assets\styles\pre.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="statics\content\components\accordions.html" />
+    <Content Include="statics\content\components\commentary.html" />
+    <Content Include="statics\content\components\commentaryForm.html" />
+    <Content Include="statics\content\components\downloads.html" />
+    <Content Include="statics\content\components\filters.html" />
+    <Content Include="statics\content\components\filtersBanner.html" />
+    <Content Include="statics\content\components\form.html" />
+    <Content Include="statics\content\components\grid.html" />
+    <Content Include="statics\content\components\gridImages.html" />
+    <Content Include="statics\content\components\lightbox.html" />
+    <Content Include="statics\content\components\map.html" />
+    <Content Include="statics\content\components\mediaFilters.html" />
+    <Content Include="statics\content\components\searchBanner.html" />
+    <Content Include="statics\content\components\slider.html" />
+    <Content Include="statics\content\components\subscribeForm.html" />
+    <Content Include="statics\content\components\tabs.html" />
+    <Content Include="statics\content\components\textCarousel.html" />
+    <Content Include="statics\content\components\tooltips.html" />
+    <Content Include="statics\content\components\video.html" />
+    <Content Include="statics\content\entries\entry.html" />
+    <Content Include="statics\content\entries\newEntry.html" />
+    <Content Include="statics\content\globalElements.html" />
+    <Content Include="statics\content\impulses\adressImpulse.html" />
+    <Content Include="statics\content\impulses\entriesImpulse.html" />
+    <Content Include="statics\content\impulses\filterImpulse.html" />
+    <Content Include="statics\content\impulses\imageImpulse.html" />
+    <Content Include="statics\content\impulses\listImpulse.html" />
+    <Content Include="statics\content\impulses\overlayImpulse.html" />
+    <Content Include="statics\content\impulses\tagsImpulse.html" />
+    <Content Include="statics\content\pages\blog\results.html" />
+    <Content Include="statics\content\pages\news\newList.html" />
+    <Content Include="statics\content\pages\resultsGrid\cs-filters.html" />
+    <Content Include="statics\content\pages\resultsGrid\entry.html" />
+    <Content Include="statics\content\pages\resultsGrid\event.html" />
+    <Content Include="statics\content\pages\resultsGrid\featuredEvent.html" />
+    <Content Include="statics\content\pages\resultsGrid\hp-filters.html" />
+    <Content Include="statics\content\pages\resultsList\featuredEntry.html" />
+    <Content Include="statics\master\footer\copyright.html" />
+    <Content Include="statics\master\footer\footer.html" />
+    <Content Include="statics\master\header\header.html" />
+    <Content Include="statics\master\header\logo.html" />
+    <Content Include="statics\master\header\user.html" />
+    <Content Include="statics\master\html\head.html" />
+    <Content Include="statics\master\shared\filtering\pagination.html" />
+    <Content Include="statics\master\shared\nav\breadcrumb.html" />
+    <Content Include="statics\master\shared\nav\mainNav.html" />
+    <Content Include="statics\master\shared\nav\navigation.html" />
+    <Content Include="statics\master\shared\socials\shareTrigger.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>41182</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:41182/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

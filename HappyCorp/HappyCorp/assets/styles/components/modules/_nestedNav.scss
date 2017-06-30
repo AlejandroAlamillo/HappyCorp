@@ -1,0 +1,14 @@
+﻿
+.nested-nav-wrapper { width: 100%; overflow-x: auto; }
+.nested-nav {  }
+.nested-nav ul { list-style: none; margin: 0; padding: 0; }
+.nested-nav ul li { margin-bottom: 0; }
+.nested-nav ul li a { display: block; background: $primary-color; color: #FFF; padding: 10px;  width: 120px; border-bottom: 1px solid #fff;  }
+.nested-nav ul li a:hover,
+.nested-nav ul li a:focus,
+.nested-nav ul li a.active { background: $active-color; }
+
+.nav-wrap {  float: left; border-right: 1px solid #fff;   }
+.nav-wrap.collapse {  width: 20px; overflow: hidden; }
+
+.nav-object-content { padding: 10px; background: $box-color; width: 500px; overflow: auto; }

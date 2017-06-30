@@ -1,0 +1,11 @@
+﻿$(document).ready(function () {
+    gsCarousel();
+    gsAccordions();
+    styleForm();
+    overlayAjaxTrigger();
+    validateForm();
+    bindOverlayEvents();
+    bindTabs();
+    bindNav();
+    bindSharepopup();
+});

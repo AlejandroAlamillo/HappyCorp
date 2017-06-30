@@ -1,0 +1,17 @@
+[
+  {
+    "outputFileName": "assets/scripts/gstring.js",
+    "inputFiles": [
+      "assets/scripts/lib/jquery-ui.min.js",
+      "assets/scripts/lib/iosslider.js",
+      "assets/scripts/lib/vertical-center.js",
+      "assets/scripts/lib/text-ellipsis.js",
+      "assets/scripts/lib/form-customizer.js",
+      "assets/scripts/lib/sticky.js",
+      "assets/scripts/lib/filters.js",
+      "assets/scripts/lib/validation.js",
+      "assets/scripts/functions.js",
+      "assets/scripts/main.js"
+    ]
+  }
+]

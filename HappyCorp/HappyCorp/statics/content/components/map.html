@@ -1,0 +1,28 @@
+﻿<!-- GT MAP -->
+<div class="map-container">
+    <div id="js-gt-maps" class="gt-map" style="height: 650px;">
+    </div>
+</div>
+<!--/ GT MAP -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9a_UZQFuwKCqNneDWMKZMF7VpzszGK8w"></script>
+<script src="/assets/scripts/lib/infobox.js" type="text/javascript"></script>
+<script src="/assets/scripts/lib/gtmaps.js" type="text/javascript"></script>
+<script>
+    var latlng = new google.maps.LatLng(51.390663, -2.527469);
+    var myOptions = {
+        zoom: 14,
+        center: latlng,
+        scrollwheel: true,
+        scaleControl: false,
+        disableDefaultUI: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("js-gt-maps"), myOptions);
+    var image = "/assets/images/icons/map_pin.png";
+    var marker = new google.maps.Marker({
+        map: map,
+        icon: image,
+        position: map.getCenter()
+    });
+</script>
