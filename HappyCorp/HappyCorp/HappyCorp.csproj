@@ -66,6 +66,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\images\Alamillo´s logo ancho.png" />
+    <Content Include="assets\images\image-1.jpg" />
+    <Content Include="assets\images\image-2.jpg" />
+    <Content Include="assets\images\services-1.jpg" />
+    <Content Include="assets\images\services-2.jpg" />
+    <Content Include="assets\images\services-3.jpg" />
+    <Content Include="assets\images\slider-img1.png" />
     <Content Include="packages.config" />
     <Content Include="bundleconfig.json" />
     <Content Include="assets\images\map\Thumbs.db" />
@@ -160,7 +167,9 @@
     <Content Include="assets\images\smallSpinner.gif" />
     <Content Include="assets\scripts\functions.js" />
     <Content Include="assets\scripts\gstring.js" />
-    <Content Include="assets\scripts\gstring.min.js" />
+    <Content Include="assets\scripts\gstring.min.js">
+      <DependentUpon>gstring.js</DependentUpon>
+    </Content>
     <Content Include="assets\scripts\lib\filters.js" />
     <Content Include="assets\scripts\lib\form-customizer.js" />
     <Content Include="assets\scripts\lib\iosslider.js" />
@@ -183,7 +192,9 @@
     <Content Include="assets\styles\images\ui-icons_cc0000_256x240.png" />
     <Content Include="assets\styles\images\ui-icons_ffffff_256x240.png" />
     <Content Include="assets\styles\images\ui-icons_FFF_256x240.png" />
-    <Content Include="assets\styles\main.css" />
+    <Content Include="assets\styles\main.css">
+      <DependentUpon>main.scss</DependentUpon>
+    </Content>
     <Content Include="assets\styles\pre.css" />
     <Content Include="Default.aspx" />
     <Content Include="statics\content\components\accordions.html" />
@@ -234,6 +245,8 @@
     <Content Include="statics\master\shared\nav\mainNav.html" />
     <Content Include="statics\master\shared\nav\navigation.html" />
     <Content Include="statics\master\shared\socials\shareTrigger.html" />
+    <Content Include="templates\t00-global.aspx" />
+    <Content Include="templates\t01-home.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +258,20 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="templates\t00-global.aspx.cs">
+      <DependentUpon>t00-global.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\t00-global.aspx.designer.cs">
+      <DependentUpon>t00-global.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\t01-home.aspx.cs">
+      <DependentUpon>t01-home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\t01-home.aspx.designer.cs">
+      <DependentUpon>t01-home.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

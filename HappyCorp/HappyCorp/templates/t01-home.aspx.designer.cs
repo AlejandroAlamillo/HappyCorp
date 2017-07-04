@@ -7,9 +7,9 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace HappyCorp {
+namespace HappyCorp.templates {
     
     
-    public partial class Default {
+    public partial class t01_home {
     }
 }

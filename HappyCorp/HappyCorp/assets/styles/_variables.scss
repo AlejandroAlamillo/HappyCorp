@@ -1,6 +1,6 @@
 /*colors*/
-$primary-color: #304e89;
-$active-color: #2d79c1;
+$primary-color: #0cc3ff;
+$active-color: #02b6e3;
 $font-color: #333333;
 $box-color: #EEEEEE; 
 
@@ -12,18 +12,19 @@ $global-margin: 10px;
 $global-border: 1px solid #CCC;
 
 /*media queries breakpoints*/
-$desktop: 1280px;
+$desktop: 1140px;
 $laptop: 1024px;
-$tablet: 960px;
-$mobile: 640px;
+$tablet: 870px;
+$mobile: 768px;
 
 /*aspect ratios*/
 $image-aspect: 75%;
-$banner-aspect: 50%;
+$banner-aspect: 36.4%;
 
 
 /*fonts*/
-@import url(http://fonts.googleapis.com/css?family=Poiret+One);
-$global-font-family: Arial;
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+$global-font-family: 'Lato', sans-serif;
 .global-font { font-family: $global-font-family; font-size: 14px; line-height: 18px; font-weight: 400; color: #333;  }
-.headers { color: $primary-color; margin: 0 0 $global-margin*2 0; font-weight: 400; font-family: 'Poiret One', cursive; }
+.headers {   margin: 0 0 $global-margin*2 0; font-weight:700; font-family: $global-font-family; }

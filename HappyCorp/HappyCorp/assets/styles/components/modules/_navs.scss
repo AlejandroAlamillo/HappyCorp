@@ -29,7 +29,7 @@
 .mobile-nav-trigger { display: none;  float: right; margin: 0;}
 
 /*desktop only*/
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $tablet+1) {
 .drop-down-wrapper { }
 .drop-down-menu { display: block !important; opacity: 1 !important; }
 
@@ -49,4 +49,5 @@
 	.drop-down-menu .menu-item:hover .drop-down .menu-item:hover .drop-down { display: none; }
 
 }
+
 /*******DROPDOWN MENU END******/

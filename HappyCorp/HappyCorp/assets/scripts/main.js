@@ -19,6 +19,9 @@ $(document).ready(function () {
     verticalAlign();
     triggerJqueryUI();
 
+    $(window).resize(function () {
+        updateLayout();
+    });
 });
 
 
