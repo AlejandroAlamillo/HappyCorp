@@ -67,12 +67,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\images\Alamillo´s logo ancho.png" />
+    <Content Include="assets\images\background-banner.png" />
     <Content Include="assets\images\image-1.jpg" />
     <Content Include="assets\images\image-2.jpg" />
+    <Content Include="assets\images\image-left.jpg" />
     <Content Include="assets\images\services-1.jpg" />
     <Content Include="assets\images\services-2.jpg" />
     <Content Include="assets\images\services-3.jpg" />
     <Content Include="assets\images\slider-img1.png" />
+    <Content Include="assets\images\spider-profile.jpg" />
     <Content Include="packages.config" />
     <Content Include="bundleconfig.json" />
     <Content Include="assets\images\map\Thumbs.db" />

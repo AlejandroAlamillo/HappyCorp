@@ -1802,6 +1802,9 @@ a.ui-button:active,
 .auto-width {
   width: auto !important; }
 
+.full-width {
+  width: 100% !important; }
+
 .overflow-hidden {
   overflow: hidden; }
 
@@ -3384,11 +3387,120 @@ h1, h2, h3, h4, h5 {
 .img-btn {
   width: 45px;
   height: 45px;
-  border: 2px solid grey;
+  border: none !important;
   font-size: 24px;
   line-height: 40px;
   padding-left: 3px;
   text-align: center; }
+
+.under-img {
+  margin-top: 11px; }
+
+/*Text in 2 column*/
+.text-2col {
+  margin-top: 50px; }
+
+.col-inner {
+  margin: 20px; }
+
+.col-inner h2 {
+  margin-bottom: 40px;
+  font-size: 42px; }
+
+.profile {
+  margin-top: 50px; }
+
+.profile-img {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  position: absolute; }
+
+.profile-text {
+  padding-left: 120px; }
+
+.profile-text h3 {
+  margin: 0px; }
+
+.about-link {
+  padding-top: 20px; }
+
+.about-link a {
+  color: #02b6e3;
+  text-decoration: underline; }
+
+/*Banner counter*/
+.banner-counter {
+  background-image: url("/assets/images/background-banner.png");
+  height: 524px;
+  display: block; }
+
+.banner-counter .inner-counter {
+  padding: 200px 20px; }
+
+.banner-counter {
+  color: white; }
+
+.text-counter-col h3 {
+  font-size: 48px; }
+
+.text-counter-col .sub-text {
+  margin: -17px 0px 20px; }
+
+/*Section servive*/
+.service .ico-arrow {
+  margin-left: 5px;
+  color: #02b6e3; }
+
+.service a {
+  color: #02b6e3; }
+
+.service p {
+  line-height: 1.8em; }
+
+.service-ico span {
+  font-size: 50px;
+  color: #02b6e3; }
+
+/*Banner Form*/
+.banner-form {
+  background-image: url("/assets/images/background-banner.png");
+  height: 720px;
+  display: block;
+  background-size: 100% 720px; }
+
+.banner-form-left {
+  background-image: url("/assets/images/image-left.jpg");
+  height: 720px;
+  display: block; }
+
+.banner-form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white; }
+
+.btn-form {
+  color: #02b6e3 !important;
+  border: 1px solid white !important; }
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: white; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: white;
+  opacity: 1; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: white;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white; }
 
 /*7.Responsive*/
 /************************************************************************************************************************************/

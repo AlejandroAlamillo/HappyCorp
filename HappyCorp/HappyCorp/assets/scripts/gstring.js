@@ -1464,7 +1464,7 @@ function activateAccordion(accHeading) {
     var thisAcc = accHeading.closest(".js-accordion");
     if (!accHeading.hasClass('active')) {
         if (wrapper.length) {
-            wrapper.find('.js-accordion-heading,.js-contact-acc-heading').removeClass('active');
+            wrapper.find('.js-accordion-heading').removeClass('active');
             wrapper.find('.js-accordion-content').slideUp(function () { updateLayout(); });
         }
         accHeading.addClass('active');
@@ -1834,9 +1834,7 @@ function updateLayout() {
     bindTooltips();
     updateSticky();
     bindMasonry();
-    $(window).resize(function () {
-         $(".header-bottom").css("width","100%");
-    });
+    
 }
 
 

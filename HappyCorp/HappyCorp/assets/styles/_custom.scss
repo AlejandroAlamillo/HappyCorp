@@ -119,14 +119,63 @@ h1,h2,h3,h4,h5{font-family: 'Lato', sans-serif;}
 .search-bar.active{border: 2px solid $active-color !important ;}
 
 /*Slider*/
-
 .slider-container{ z-index: 0;  }
 
 /*Editable content*/
 .editable-content h2{    position: relative;color: #040404;max-width: 880px;margin: 0 auto;font-size: 40px;font-weight: 300;text-align: center;line-height: 1.4em;padding-bottom: 40px}
 .text-component h2::after{position: absolute;content: ' ';left: 50%;bottom: 0px;width: 70px;height: 3px;margin-left: -35px;background-color: #01ccff;}
+
 /*Imagen in 3 colum*/
-.img-btn{    width: 45px;height: 45px; border:2px solid grey;font-size: 24px;line-height: 40px;padding-left: 3px;text-align: center;}
+.img-btn{width: 45px;height: 45px; border:none !important;font-size: 24px;line-height: 40px;padding-left: 3px;text-align: center;}
+.under-img{margin-top:11px;}
+
+/*Text in 2 column*/
+ .text-2col{margin-top:50px;}
+ .col-inner{margin:20px;}
+ .col-inner h2{margin-bottom:40px; font-size:42px;}
+
+ .profile{margin-top:50px;}
+ .profile-img{border-radius:50%;height:70px;width:70px; position:absolute;}
+ .profile-text{padding-left:120px;}
+ .profile-text h3{margin:0px;}
+
+ .about-link{padding-top:20px;}
+ .about-link a{color:$active-color;text-decoration: underline;}
+
+ /*Banner counter*/
+ .banner-counter{background-image:url("/assets/images/background-banner.png"); height:524px;display:block;}
+ .banner-counter .inner-counter{padding:200px 20px;}
+ .banner-counter {color:white;}
+ 
+ .text-counter-col h3{font-size:48px;}
+ .text-counter-col .sub-text{margin: -17px 0px 20px;}
+
+ /*Section servive*/
+ .service .ico-arrow{margin-left:5px; color:$active-color;}
+ .service a{color:$active-color;}
+ .service p{line-height:1.8em;}
+ .service-ico span{font-size:50px;color:$active-color;}
+
+ /*Banner Form*/
+
+ .banner-form{background-image:url("/assets/images/background-banner.png"); height:720px;display:block;    background-size: 100% 720px;}
+ .banner-form-left{background-image:url("/assets/images/image-left.jpg"); height:720px;display:block;}
+ .banner-form input{background-color: rgba(0, 0, 0, 0); border: none; border-bottom:1px solid white;color:white;}
+  .btn-form{color:$active-color!important;border:1px solid white!important;}
+ ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    white;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:   white;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    white;
+}
 
 /*7.Responsive*/
 /************************************************************************************************************************************/
