@@ -16,7 +16,7 @@
 
             <!---Slider--->
             <!--#include virtual="/statics/content/components/slider.html"-->
-            <!---Slider/--->
+
             <div class="box-container">
                 <!---Editable Content--->
                 <div class="editable-content text-component">
@@ -129,9 +129,9 @@
 
             </div>
 
+            <!--- Service -->
             <div class="box-container ">
                 <div class="inner">
-                    <!--- Service -->
                     <div class="services-sect box-12 tc">
                         <h2>Our Service</h2>
                         <p>We provide all kind of business,financial & consulting services</p>
@@ -227,17 +227,18 @@
 
             <!--- Banner Form -->
             <div class=" banner-form">
-                <div class="banner-form-left box-6">
+                <div class="banner-form-left js-slide-item box-6">
+                   
                 </div>
                 <div class="banner-form-right box-6">
                     <div class="inner">
                         <form>
-                            <h3 class="title">Contact us</h3>
+                            <h3>Contact us</h3>
                             <div class="box-6">
                                 <div class="inner">
-                                      <input type="text" placeholder="Your Name" required />
+                                    <input type="text" placeholder="Your Name" required />
                                 </div>
-                             </div>
+                            </div>
 
                             <div class="box-6">
                                 <div class="inner">
@@ -252,15 +253,93 @@
                                     <p>
                                         <textarea placeholder="Your Message" required></textarea>
                                     </p>
+                                    <p>
+                                        <input class="btn-form" type="submit" value="Send Request" />
+                                    </p>
                                 </div>
                             </div>
-                            <p>
-                                <input class="btn-form"type="submit" value="Send Request" />
-                            </p>
+
                         </form>
                     </div>
                 </div>
             </div>
+
+            <!----Advisor---->
+            <div class="box-container ">
+                <div class="inner">
+                    <div class="box-12">
+                        <h2>Our Advisor</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <!--#include virtual="/statics/content/components/imageCarousel.html"-->
+                </div>
+            </div>
+
+            <!---Purchase--->
+            <div class="banner-purchase">
+                <div class="box-7">
+                    <h3>We Are The Best Consulting Company Ever!!</h3>
+                </div>
+                <div class=" banner-btn box-5">
+                    <a class="purchase-btn">PURCHASE NOW</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+    
+            <!--Testimonials-->
+            <div class="testimonials box-container">
+                <div class="box-12">
+                    
+                    <div class=" inner tc">
+                        <p>Testimonials</p>
+                        <h2>What´s client say</h2>
+                    </div>
+                    <!--#include virtual="/statics/content/components/textCarousel.html"-->
+                    <div class="clearfix"></div>
+                </div>
+                 <div class="clearfix"></div>
+            </div>
+
+            
+            <div class="box-container">
+
+                <!--Latest News--->
+                <!--#include virtual="/statics/content/impulses/entriesImpulseHorizontal.html"-->
+
+                <!--Partnest-->
+                <div class="box-12 partners tc">
+                    <div class="inner">
+                         <div class="partner box-3 box-tablet-6 box-mobile-12">
+                             <div class="inner">
+                                 <img alt="partner" src="https://placeholdit.imgix.net/~text?txtsize=47&txt=208%C3%97110&w=208&h=110" />
+                             </div>
+                            
+                         </div>
+                         <div class="partner box-3 box-tablet-6 box-mobile-12">
+                             <div class="inner">
+                                 <img alt="partner" src="https://placeholdit.imgix.net/~text?txtsize=47&txt=208%C3%97110&w=208&h=110" />
+                             </div>
+                            
+                         </div>
+                        <div class="partner box-3 box-tablet-6 box-mobile-12">
+                             <div class="inner">
+                                 <img alt="partner" src="https://placeholdit.imgix.net/~text?txtsize=47&txt=208%C3%97110&w=208&h=110" />
+                             </div>
+                            
+                         </div>
+                        <div class="partner box-3 box-tablet-6 box-mobile-12">
+                             <div class="inner">
+                                 <img alt="partner" src="https://placeholdit.imgix.net/~text?txtsize=47&txt=208%C3%97110&w=208&h=110" />
+                             </div>
+                            
+                         </div>
+                        <div class="clearfix"></div>
+                    </div>
+                   
+                </div>
+            </div>
+
+
 
         </div>
     </div>

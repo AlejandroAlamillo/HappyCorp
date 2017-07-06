@@ -23,13 +23,19 @@ slider-navigation:hover, .slider-navigation:focus, .slider-navigation.active { b
 	.slider-container { height: auto; padding: 0;}
 	.slider-container .selectors-block { position: relative; }
 }
-/********** START CAROUSAL END **********/
+/********** CAROUSEL END **********/
+
 
 
 /*text carousel*/
-.text-carousel { height: 200px; padding: 0; @extend .smooth-transition; }
-.text-carousel .text-slides-wrapper { height: 200px; padding: 0; }
+.text-carousel { height: 500px; padding: 0; @extend .smooth-transition; }
+.text-carousel .text-slides-wrapper { height: 500px; padding: 0; }
 .text-carousel .indicators { position: relative; left: 20px; bottom: 0; }
-.text-carousel .slide-item .inner { min-height: 200px; padding: 20px; }
+.text-carousel .slide-item .inner { min-height: 500px; padding: 20px; }
 .text-carousel .slide-item  h4,
-.text-carousel .slide-item  p { margin: 0 !important; }
+.text-carousel .slide-item  p { margin: 0 !important;  font-size: 28px;line-height: 1.6em; margin-bottom: 30px; font-weight: 300;}
+/*Image carousel*/
+.img-carousel { height: 300px; padding: 0; @extend .smooth-transition; }
+.img-carousel .text-slides-wrapper { height: 300px; padding: 0; }
+.img-carousel .indicators { position: relative; left: 20px; bottom: 0; }
+.img-carousel .slide-item .inner { min-height: 300px; padding: 20px; }

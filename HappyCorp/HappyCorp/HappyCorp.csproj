@@ -209,6 +209,7 @@
     <Content Include="statics\content\components\form.html" />
     <Content Include="statics\content\components\grid.html" />
     <Content Include="statics\content\components\gridImages.html" />
+    <Content Include="statics\content\components\imageCarousel.html" />
     <Content Include="statics\content\components\lightbox.html" />
     <Content Include="statics\content\components\map.html" />
     <Content Include="statics\content\components\mediaFilters.html" />
@@ -224,10 +225,12 @@
     <Content Include="statics\content\globalElements.html" />
     <Content Include="statics\content\impulses\adressImpulse.html" />
     <Content Include="statics\content\impulses\entriesImpulse.html" />
+    <Content Include="statics\content\impulses\entriesImpulseHorizontal.html" />
     <Content Include="statics\content\impulses\filterImpulse.html" />
     <Content Include="statics\content\impulses\imageImpulse.html" />
     <Content Include="statics\content\impulses\listImpulse.html" />
     <Content Include="statics\content\impulses\overlayImpulse.html" />
+    <Content Include="statics\content\impulses\overlayImpulseSocial.html" />
     <Content Include="statics\content\impulses\tagsImpulse.html" />
     <Content Include="statics\content\pages\blog\results.html" />
     <Content Include="statics\content\pages\news\newList.html" />

@@ -9,7 +9,7 @@
 .impulse-entry .copy-wrapper p { margin: 0; }
 
 /*overlay impulse*/
-.overlay-impulse { background: transparent; position: relative; padding-bottom: 62.5%; overflow: hidden; }
+.overlay-impulse { background: transparent; position: relative; padding-bottom: 110%; overflow: hidden; }
 .overlay-impulse .item-image {}
 .overlay-impulse .item-image img { width: 100%; position:absolute; top: 0; left: 0; }
 .overlay-impulse .item-overlay { z-index: 0; -webkit-transition: all 0.3s ease-in-out; -moz-transition:    all 0.3s ease-in-out; -o-transition:      all 0.3s ease-in-out; -ms-transition:     all 0.3s ease-in-out; bottom: 0; width: 100%; top: calc(100% - 75px);  left: 0; position: absolute; width: 100%; height: 100%; }
