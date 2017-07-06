@@ -2513,7 +2513,7 @@ slider-navigation:hover, .slider-navigation:focus, .slider-navigation.active {
   cursor: inherit !important;
   width: 100%; }
 
-@media only screen and (min-width: 870px) {
+@media only screen and (min-width: 871px) {
   .slider-container .slider-absolute {
     position: absolute;
     top: 0;
@@ -2523,7 +2523,8 @@ slider-navigation:hover, .slider-navigation:focus, .slider-navigation.active {
 @media only screen and (max-width: 870px) {
   .slider-container .slide-caption {
     position: relative;
-    padding: 10px; }
+    padding: 10px;
+    margin-top: 0px !important; }
 
   .slider-container {
     height: auto;
@@ -3387,7 +3388,7 @@ h2 {
 .slider-container {
   z-index: 0; }
 
-@media (max-width: 870px) {
+@media (max-width: 869px) {
   .slide-caption {
     margin-top: 0px !important; }
 
@@ -3633,6 +3634,9 @@ h2 {
 
 .impulse-entry-horizontal .ico-arrow {
   margin-left: 5px; }
+
+.new {
+  margin-bottom: 20px; }
 
 /*Partners*/
 .partners {
