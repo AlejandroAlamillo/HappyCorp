@@ -70,7 +70,7 @@
                     
                     <div class=" inner tc">
                         <p>Testimonials</p>
-                        <h2>What´s client say</h2>
+                        <h3 class="h2">What´s client say</h3>
                     </div>
                     <!--#include virtual="/statics/content/components/textCarousel.html"-->
                     <div class="clearfix"></div>

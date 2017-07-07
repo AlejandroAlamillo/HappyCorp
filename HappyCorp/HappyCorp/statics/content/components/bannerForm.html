@@ -9,25 +9,30 @@
                 <h3>Contact us</h3>
                 <div class="box-6">
                     <div class="inner">
-                        <input type="text" placeholder="Your Name" required />
+                        <input id="form-name" type="text" placeholder="Your Name" required />
+                        <label class="hidden" for="form-name">Name</label>
                     </div>
                 </div>
 
                 <div class="box-6">
                     <div class="inner">
-                        <input type="email" placeholder="Your Email" required />
+                        <input id="form-email" type="email" placeholder="Your Email" required />
+                        <label class="hidden" for="form-email">Email</label>
                     </div>
                 </div>
                 <div class="box-12">
                     <div class="inner">
                         <p>
-                            <input type="text" placeholder="Subject" required />
+                            <input id="form-subject" type="text" placeholder="Subject" required />
+                            <label class="hidden" for="form-subject">Subject</label>
                         </p>
                         <p>
-                            <textarea placeholder="Your Message" required></textarea>
+                            <textarea id="your-message" placeholder="Your Message" required></textarea>
+                            <label for="your-message" class="hidden">Your Message</label>
                         </p>
                         <p>
-                            <input class="btn-form" type="submit" value="Send Request" />
+                            <input id="form-submit" class="btn-form" type="submit" value="Send Request" />
+                            <label class="hidden" for="form-submit">Submit</label>
                         </p>
                     </div>
                 </div>

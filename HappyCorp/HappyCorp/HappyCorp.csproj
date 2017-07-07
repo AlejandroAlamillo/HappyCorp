@@ -66,7 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\images\Alamillo´s logo ancho.png" />
+    <Content Include="assets\images\Alamillo´s-logo-ancho.png" />
     <Content Include="assets\images\background-banner.png" />
     <Content Include="assets\images\image-1.jpg" />
     <Content Include="assets\images\image-2.jpg" />
@@ -121,7 +121,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\images\Alamillo´s logo.png" />
+    <Content Include="assets\images\Alamillo´s-logo.png" />
     <Content Include="assets\images\festival-arenal-sound.jpg" />
     <Content Include="assets\images\festival.jpg" />
     <Content Include="assets\images\gstring_logo.png" />
@@ -203,8 +203,11 @@
     <Content Include="statics\content\components\accordions.html" />
     <Content Include="statics\content\components\bannerCounter.html" />
     <Content Include="statics\content\components\bannerForm.html" />
+    <Content Include="statics\content\components\bannerPurchase.html" />
+    <Content Include="statics\content\components\clients.html" />
     <Content Include="statics\content\components\commentary.html" />
     <Content Include="statics\content\components\commentaryForm.html" />
+    <Content Include="statics\content\components\component2Column.html" />
     <Content Include="statics\content\components\downloads.html" />
     <Content Include="statics\content\components\filters.html" />
     <Content Include="statics\content\components\filtersBanner.html" />
@@ -222,6 +225,7 @@
     <Content Include="statics\content\components\textCarousel.html" />
     <Content Include="statics\content\components\tooltips.html" />
     <Content Include="statics\content\components\video.html" />
+    <Content Include="statics\content\components\wrapperEntryImpulse.html" />
     <Content Include="statics\content\components\wrapperImpulse.html" />
     <Content Include="statics\content\entries\entry.html" />
     <Content Include="statics\content\entries\newEntry.html" />
@@ -231,6 +235,7 @@
     <Content Include="statics\content\impulses\entriesImpulseHorizontal.html" />
     <Content Include="statics\content\impulses\filterImpulse.html" />
     <Content Include="statics\content\impulses\imageImpulse.html" />
+    <Content Include="statics\content\impulses\impulseAboutUs.html" />
     <Content Include="statics\content\impulses\listImpulse.html" />
     <Content Include="statics\content\impulses\overlayImpulse.html" />
     <Content Include="statics\content\impulses\overlayImpulseSocial.html" />

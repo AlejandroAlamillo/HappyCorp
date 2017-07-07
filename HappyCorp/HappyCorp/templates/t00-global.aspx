@@ -96,13 +96,13 @@
             <!--share popup -->
             <span class="share-popup">
                 <!--share icon -->
-                <span class="share-item"><a title="Share in twitter" href="#"><i class="fa fa-twitter"></i><span class="hidden">Twitter</span>&nbsp;<span class="share-count">0</span></a> </span>
+                <span class="share-item"><a title="Share in twitter" href="#"><span class="fa fa-twitter"></span><span class="hidden">Twitter</span>&nbsp;<span class="share-count">0</span></a> </span>
                 <!-- / share icon -->
                 <!--share icon -->
-                <span class="share-item"><a title="Share in facebook" href="#"><i class="fa fa-facebook"></i><span class="hidden">facebook</span>&nbsp;<span class="share-count">0</span></a> </span>
+                <span class="share-item"><a title="Share in facebook" href="#"><span class="fa fa-facebook"></span><span class="hidden">facebook</span>&nbsp;<span class="share-count">0</span></a> </span>
                 <!-- / share icon -->
                 <!--share icon -->
-                <span class="share-item"><a title="Share in Google+" href="#"><i class="fa fa-google"></i><span class="hidden">Google +</span>&nbsp;<span class="share-count">0</span></a> </span>
+                <span class="share-item"><a title="Share in Google+" href="#"><span class="fa fa-google"></span><span class="hidden">Google +</span>&nbsp;<span class="share-count">0</span></a> </span>
                 <!-- / share icon -->
             </span>
             <!-- / share popup -->
@@ -113,7 +113,7 @@
     <!-- form notification -->
     <div class="form-notification js-form-notification info">
         <div class="icon">
-            <i class="fa fa-cog fa-spin"></i>
+            <span class="fa fa-cog fa-spin"></span>
         </div>
         <div class="copy">
             <p><strong>Loading:</strong> Please wait...</p>
@@ -124,7 +124,7 @@
     <!-- form notification -->
     <div class="form-notification js-form-notification success">
         <div class="icon">
-            <i class="fa fa-check"></i>
+            <span class="fa fa-check"></span>
         </div>
         <div class="copy">
             <p><strong>Success:</strong> Your enquiry has been submited</p>
@@ -135,7 +135,7 @@
     <!-- form notification -->
     <div class="form-notification js-form-notification error">
         <div class="icon">
-            <i class="fa fa-close"></i>
+            <span class="fa fa-close"></span>
         </div>
         <div class="copy">
             <p><strong>Error:</strong> Check your entries</p>
@@ -146,7 +146,7 @@
     <!-- form notification -->
     <div class="form-notification js-form-notification warning">
         <div class="icon">
-            <i class="fa fa-exclamation-triangle"></i>
+            <span class="fa fa-exclamation-triangle"></span>
         </div>
         <div class="copy">
             <p><strong>Warning:</strong> There was an error submiting your enquiry</p>
@@ -157,7 +157,7 @@
     <!-- form notification -->
     <div class="form-notification js-form-notification info">
         <div class="icon">
-            <i class="fa fa fa-exclamation-circle"></i>
+            <span class="fa fa fa-exclamation-circle"></span>
         </div>
         <div class="copy">
             <p><strong>Info:</strong> There was an error submiting your enquiry</p>
