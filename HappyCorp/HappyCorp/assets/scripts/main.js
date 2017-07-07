@@ -18,7 +18,8 @@ $(document).ready(function () {
     bindTooltips();
     verticalAlign();
     triggerJqueryUI();
-
+    animateScrollToAnchor();
+    counter();
     $(window).resize(function () {
         updateLayout();
     });

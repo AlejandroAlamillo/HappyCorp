@@ -201,6 +201,8 @@
     <Content Include="assets\styles\pre.css" />
     <Content Include="Default.aspx" />
     <Content Include="statics\content\components\accordions.html" />
+    <Content Include="statics\content\components\bannerCounter.html" />
+    <Content Include="statics\content\components\bannerForm.html" />
     <Content Include="statics\content\components\commentary.html" />
     <Content Include="statics\content\components\commentaryForm.html" />
     <Content Include="statics\content\components\downloads.html" />
@@ -220,6 +222,7 @@
     <Content Include="statics\content\components\textCarousel.html" />
     <Content Include="statics\content\components\tooltips.html" />
     <Content Include="statics\content\components\video.html" />
+    <Content Include="statics\content\components\wrapperImpulse.html" />
     <Content Include="statics\content\entries\entry.html" />
     <Content Include="statics\content\entries\newEntry.html" />
     <Content Include="statics\content\globalElements.html" />
@@ -231,6 +234,7 @@
     <Content Include="statics\content\impulses\listImpulse.html" />
     <Content Include="statics\content\impulses\overlayImpulse.html" />
     <Content Include="statics\content\impulses\overlayImpulseSocial.html" />
+    <Content Include="statics\content\impulses\serviceImpulse.html" />
     <Content Include="statics\content\impulses\tagsImpulse.html" />
     <Content Include="statics\content\pages\blog\results.html" />
     <Content Include="statics\content\pages\news\newList.html" />

@@ -3,13 +3,14 @@
 function carousel() {
     $('.js-slider').each(function () {
         var thisSlider = $(this);
+        thisSlider.iosSlider('destroy');
         var sliderContainer = thisSlider.closest(".slider-container");
         var lastArgs = null;
         thisSlider.iosSlider({
             desktopClickDrag: false,
             snapToChildren: true,
-            navNextSelector: sliderContainer.find('.js-slide-button-prev'),
-            navPrevSelector: sliderContainer.find('.js-slide-button-next'),
+            navPrevSelector: sliderContainer.find('.js-slide-button-prev'),
+            navNextSelector: sliderContainer.find('.js-slide-button-next'),
             navSlideSelector: sliderContainer.find('.js-slider-selector'),
             onSlideChange: slideChange,
             onSliderLoaded: setSliderHeight,
@@ -19,11 +20,12 @@ function carousel() {
         $(window).resize(function () {
             setSliderHeight(lastArgs);
         });
-        sliderContainer.find('.item:eq(0) img').bind('load', function () {
+        sliderContainer.find('.js-slide-item:eq(0) img').bind('load', function () {
             sliderContainer.addClass("loaded");
             setSliderHeight(lastArgs);
         });
         function slideChange(args) {
+            sliderContainer.find('.js-slider-selector').addClass('.big-Margin');
             sliderContainer.find('.js-slider-selector').removeClass('active');
             sliderContainer.find('.js-slider-selector:eq(' + (args.currentSlideNumber - 1) + ')').addClass('active');
             setSliderHeight(args);
@@ -33,15 +35,16 @@ function carousel() {
 
             item = args != null ? (args.currentSlideNumber - 1) : "0";
 
-            var slide = thisSlider.find('.item:eq(' + item + ')');
+            var slide = thisSlider.find('.item').eq(item);
             if (args != null) {
-                slide = thisSlider.find('.item:eq(' + (args.currentSlideNumber - 1) + ')');
+                slide = thisSlider.find('.item').eq((args.currentSlideNumber - 1));
             }
             var mobileCaptionHeight = slide.outerHeight();
             sliderContainer.find(".js-slider").css("height", mobileCaptionHeight);
         }
     });
 }
+
 
 /*TEXT CARROUSEL*/
 function textCarousel() {
@@ -79,23 +82,16 @@ function textCarousel() {
                 lastArgs = args;
 
                 item = args != null ? (args.currentSlideNumber - 1) : "0";
-
-                var slide = sliderContainer.find('.slide-item:eq(' + item + ')');
+                var slide = thisSlider.find('.slide-item').eq(item);
                 if (args != null) {
-                    slide = sliderContainer.find('.slide-item:eq(' + (args.currentSlideNumber - 1) + ')');
+                    slide = thisSlider.find('.slide-item').eq((args.currentSlideNumber - 1));
                 }
                 var mobileCaptionHeight = slide.outerHeight();
                 thisSlider.css("height", mobileCaptionHeight);
             }
-
         });
-
-
-
-
     }
 }
-
 /*GT ACCORDIONS*/
 /******************************/
 function accordions() {
@@ -472,6 +468,51 @@ function triggerJqueryUI() {
     });
 }
 
+/*Count Jquery*/
+/*********************************/
+
+function counter() {
+
+    $(".js-count").each(function () {
+        var n = 1;
+        var thisElement = $(this);
+        var nmax = parseInt(thisElement.attr("data-stop"));
+        var x = setInterval(function () {
+            n = n + 1;
+            thisElement.html(n);
+            // If the count down is over, write some text 
+            if (n > nmax) {
+                clearInterval(x);
+                var num = n + "+";
+                thisElement.html(num)
+            }
+        }, 1);
+    });
+}
+
+
+/*Animate to anchor*/
+/*****************************/
+function animateScrollToAnchor() {
+    $("body").on("click", "a[href*=#]", function (e) {
+
+        var href = $(this).attr("href");
+        var anchorItem = $(href);
+        if (anchorItem.length) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: anchorItem.offset().top - 60
+            });
+        } else if (href == "#") {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            });
+        }
+    });
+
+}
+
 /*UPDATE FRONT END*/
 /******************************/
 function updateLayout() {
@@ -481,6 +522,7 @@ function updateLayout() {
     bindTooltips();
     updateSticky();
     bindMasonry();
+    
     
 }
 
