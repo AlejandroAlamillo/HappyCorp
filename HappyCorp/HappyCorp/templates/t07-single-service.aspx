@@ -18,21 +18,26 @@
                    <div class="inner ">
                        <div class="box-3 col-left">
                            <div class="inner">
-                               <ul class="tabs-menu box-3 box-tablet-2 box-mobile-2">
-                                   <li class="box-12 box-tablet-12 box-mobile-12"><a class="js-tab-trigger active" href="#tab-1">TAB 1</a><div class="pick"></div>
+                               <ul class="tabs-menu ">
+                                   <li class="box-12 box-tablet-12 box-mobile-12"><a href="/templates/t07-single-service.aspx" class="active">TAB 1</a>
                                    </li>
-                                   <li class="box-12 box-tablet-12 box-mobile-12"><a class="js-tab-trigger" href="#tab-2">TAB 2</a><div class="pick"></div>
+                                   <li class="box-12 box-tablet-12 box-mobile-12"><a href="/templates/t07-single-service.aspx">TAB 2</a>
                                    </li>
-                                   <li class="box-12 box-tablet-12 box-mobile-12"><a class="js-tab-trigger" href="#tab-3">TAB 3</a><div class="pick"></div>
+                                   <li class="box-12 box-tablet-12 box-mobile-12"><a href="/templates/t07-single-service.aspx">TAB 3</a>
                                    </li>
-                                   <li class="box-12 box-tablet-12 box-mobile-12"><a class="js-tab-trigger" href="#tab-4">TAB 4</a><div class="pick"></div>
+                                   <li class="box-12 box-tablet-12 box-mobile-12"><a href="/templates/t07-single-service.aspx">TAB 4</a>
                                    </li>
-                                   <li class="box-12 box-tablet-12 box-mobile-12"><a class="js-tab-trigger" href="#tab-3">TAB 5</a><div class="pick"></div>
+                                   <li class="box-12 box-tablet-12 box-mobile-12"><a href="/templates/t07-single-service.aspx">TAB 5</a>
                                    </li>
-                                   <li class="box-12 box-tablet-12 box-mobile-12"><a class="js-tab-trigger" href="#tab-4">TAB 6</a><div class="pick"></div>
+                                   <li class="box-12 box-tablet-12 box-mobile-12"><a href="/templates/t07-single-service.aspx">TAB 6</a>
                                    </li>
                                </ul>
+                               <div class="box 12 slider-small">
+                                   <!--#include virtual="/statics/content/components/sliderSmall.html"-->
+                               </div>
+                              
                            </div>
+                              <div class="clearfix"></div>
                     </div>
                     <div class="box-9 col-right">
                         <div class="inner">

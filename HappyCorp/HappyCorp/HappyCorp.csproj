@@ -225,6 +225,7 @@
     <Content Include="statics\content\components\mediaFilters.html" />
     <Content Include="statics\content\components\searchBanner.html" />
     <Content Include="statics\content\components\slider.html" />
+    <Content Include="statics\content\components\sliderSmall.html" />
     <Content Include="statics\content\components\subscribeForm.html" />
     <Content Include="statics\content\components\tabs.html" />
     <Content Include="statics\content\components\tabsVertical.html" />
