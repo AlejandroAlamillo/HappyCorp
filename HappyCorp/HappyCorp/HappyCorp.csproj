@@ -66,7 +66,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\images\about-image.jpg" />
     <Content Include="assets\images\Alamillo´s-logo-ancho.png" />
+    <Content Include="assets\images\background-2.jpg" />
     <Content Include="assets\images\background-banner.png" />
     <Content Include="assets\images\image-1.jpg" />
     <Content Include="assets\images\image-2.jpg" />
@@ -201,9 +203,11 @@
     <Content Include="assets\styles\pre.css" />
     <Content Include="Default.aspx" />
     <Content Include="statics\content\components\accordions.html" />
+    <Content Include="statics\content\components\accordionsHorizontal.html" />
     <Content Include="statics\content\components\bannerCounter.html" />
     <Content Include="statics\content\components\bannerForm.html" />
     <Content Include="statics\content\components\bannerPurchase.html" />
+    <Content Include="statics\content\components\bannerTittle.html" />
     <Content Include="statics\content\components\clients.html" />
     <Content Include="statics\content\components\commentary.html" />
     <Content Include="statics\content\components\commentaryForm.html" />
@@ -212,6 +216,7 @@
     <Content Include="statics\content\components\filters.html" />
     <Content Include="statics\content\components\filtersBanner.html" />
     <Content Include="statics\content\components\form.html" />
+    <Content Include="statics\content\components\formFAQ.html" />
     <Content Include="statics\content\components\grid.html" />
     <Content Include="statics\content\components\gridImages.html" />
     <Content Include="statics\content\components\imageCarousel.html" />
@@ -222,13 +227,18 @@
     <Content Include="statics\content\components\slider.html" />
     <Content Include="statics\content\components\subscribeForm.html" />
     <Content Include="statics\content\components\tabs.html" />
+    <Content Include="statics\content\components\tabsVertical.html" />
     <Content Include="statics\content\components\textCarousel.html" />
     <Content Include="statics\content\components\tooltips.html" />
     <Content Include="statics\content\components\video.html" />
     <Content Include="statics\content\components\wrapperEntryImpulse.html" />
     <Content Include="statics\content\components\wrapperImpulse.html" />
+    <Content Include="statics\content\components\wrapperImpulse1Line.html" />
+    <Content Include="statics\content\components\wrapperOverlayImpulse.html" />
+    <Content Include="statics\content\components\wrapperServiceEntry.html" />
     <Content Include="statics\content\entries\entry.html" />
     <Content Include="statics\content\entries\newEntry.html" />
+    <Content Include="statics\content\entries\serviceEntry.html" />
     <Content Include="statics\content\globalElements.html" />
     <Content Include="statics\content\impulses\adressImpulse.html" />
     <Content Include="statics\content\impulses\entriesImpulse.html" />
@@ -236,6 +246,7 @@
     <Content Include="statics\content\impulses\filterImpulse.html" />
     <Content Include="statics\content\impulses\imageImpulse.html" />
     <Content Include="statics\content\impulses\impulseAboutUs.html" />
+    <Content Include="statics\content\impulses\impulseSearch.html" />
     <Content Include="statics\content\impulses\listImpulse.html" />
     <Content Include="statics\content\impulses\overlayImpulse.html" />
     <Content Include="statics\content\impulses\overlayImpulseSocial.html" />
@@ -256,12 +267,19 @@
     <Content Include="statics\master\header\user.html" />
     <Content Include="statics\master\html\head.html" />
     <Content Include="statics\master\shared\filtering\pagination.html" />
+    <Content Include="statics\master\shared\nav\bottomTittle.html" />
     <Content Include="statics\master\shared\nav\breadcrumb.html" />
     <Content Include="statics\master\shared\nav\mainNav.html" />
     <Content Include="statics\master\shared\nav\navigation.html" />
     <Content Include="statics\master\shared\socials\shareTrigger.html" />
     <Content Include="templates\t00-global.aspx" />
     <Content Include="templates\t01-home.aspx" />
+    <Content Include="templates\t02-about.aspx" />
+    <Content Include="templates\t03-team.aspx" />
+    <Content Include="templates\t04-faq.aspx" />
+    <Content Include="templates\t05-404.aspx" />
+    <Content Include="templates\t06-service.aspx" />
+    <Content Include="templates\t07-single-service.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -286,6 +304,48 @@
     </Compile>
     <Compile Include="templates\t01-home.aspx.designer.cs">
       <DependentUpon>t01-home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\t02-about.aspx.cs">
+      <DependentUpon>t02-about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\t02-about.aspx.designer.cs">
+      <DependentUpon>t02-about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\t03-team.aspx.cs">
+      <DependentUpon>t03-team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\t03-team.aspx.designer.cs">
+      <DependentUpon>t03-team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\t04-faq.aspx.cs">
+      <DependentUpon>t04-faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\t04-faq.aspx.designer.cs">
+      <DependentUpon>t04-faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\t05-404.aspx.cs">
+      <DependentUpon>t05-404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\t05-404.aspx.designer.cs">
+      <DependentUpon>t05-404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\t06-service.aspx.cs">
+      <DependentUpon>t06-service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\t06-service.aspx.designer.cs">
+      <DependentUpon>t06-service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\t07-single-service.aspx.cs">
+      <DependentUpon>t07-single-service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\t07-single-service.aspx.designer.cs">
+      <DependentUpon>t07-single-service.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

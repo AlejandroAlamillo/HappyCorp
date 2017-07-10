@@ -1,12 +1,18 @@
 
 /*******TABS START******/
 ul.tabs-menu { margin-left: 0;  padding-left:0; }
-.tabs-menu li { display: inline-block; /*margin-right: 10px;*/ margin-bottom: -1px; background-color: $box-color; border-top: $global-border; border-right: $global-border; border-left: $global-border; }
-.tabs-menu li { position: relative;   z-index: 1; }
-.tabs-menu li a { padding: 5px 20px; display: block; border-bottom: $global-border; }
-.tabs-menu li a.active { background-color: #fff;  border-bottom: 1px solid transparent; }
-.tabs-menu .active a { color: $primary-color; }
-.tab { border: $global-border; background-color: #fff; width: auto; clear: both; }
+.tabs-menu li { display: inline-block; /*margin-right: 10px;*/ margin-bottom: -1px;}
+.tabs-menu li { position: relative;   z-index: 0;     transition: all 500ms ease;}
+.tabs-menu li  .pick{position: absolute;content: '';right: -2px;top: 50%;margin-top: -10px;border-top: 10px solid rgba(0, 0, 0, 0);border-right: 15px solid #fff; border-bottom: 10px solid rgba(0, 0, 0, 0);margin-right:4px;
+}
+.tabs-menu li a {    font-size:18px;    font-weight: 700; padding: 23px 30px; display: block;  border: 2px solid #ebebeb; }
+.tabs-menu li a.active { background-color:$active-color;  border-bottom: 1px solid transparent;color:#000;  color: #fff;}
+.tabs-menu .active a {}
+.tab {  background-color: #fff;}
+.tab h2{font-weight: 700;line-height: 1.4em;margin-bottom: 15px;}
+.tab-content .inner {    margin: 0px 10px 0px 10px; padding: 0px 10px 0px 10px;}
+.tab-content .inner span{color:$active-color;}
+.tab-content li p{color:#000;}
 .tab-content.js-tab-content { display: none; }
 .tab-content.js-tab-content.active { display: block; }
 /*******TABS END******/

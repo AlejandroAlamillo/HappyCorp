@@ -1825,22 +1825,30 @@ function triggerJqueryUI() {
 /*********************************/
 
 function counter() {
-
-    $(".js-count").each(function () {
-        var n = 1;
-        var thisElement = $(this);
-        var nmax = parseInt(thisElement.attr("data-stop"));
-        var x = setInterval(function () {
-            n = n + 1;
-            thisElement.html(n);
-            // If the count down is over, write some text 
-            if (n > nmax) {
-                clearInterval(x);
-                var num = n + "+";
-                thisElement.html(num)
-            }
-        }, 1);
+    $(window).scroll(function () {
+        var height = $(window).scrollTop();
+        var heightBanner = $('.banner-counter').offset().top-200;
+       
+        if (height > heightBanner && height<heightBanner+100) {
+           
+            $(".js-count").each(function () {
+                var n = 1;
+                var thisElement = $(this);
+                var nmax = parseInt(thisElement.attr("data-stop"));
+                var x = setInterval(function () {
+                    n = n + 1;
+                    thisElement.html(n);
+                    // If the count down is over, write some text 
+                    if (n > nmax) {
+                        clearInterval(x);
+                        var num = n + "+";
+                        thisElement.html(num)
+                    }
+                }, 1);
+            });
+        }
     });
+   
 }
 
 

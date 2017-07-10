@@ -12,17 +12,18 @@
 .overlay-impulse { background: transparent; position: relative; padding-bottom: 110%; overflow: hidden; }
 .overlay-impulse .item-image {}
 .overlay-impulse .item-image img { width: 100%; position:absolute; top: 0; left: 0; }
-.overlay-impulse .item-overlay { z-index: 0; -webkit-transition: all 0.3s ease-in-out; -moz-transition:    all 0.3s ease-in-out; -o-transition:      all 0.3s ease-in-out; -ms-transition:     all 0.3s ease-in-out; bottom: 0; width: 100%; top: calc(100% - 75px);  left: 0; position: absolute; width: 100%; height: 100%; }
+.overlay-impulse .item-overlay { z-index: 0; -webkit-transition: all 0.3s ease-in-out; -moz-transition:    all 0.3s ease-in-out; -o-transition:      all 0.3s ease-in-out; -ms-transition:     all 0.3s ease-in-out; bottom: 0; width: 100%; top:100% ;  left: 0; position: absolute; width: 100%; height: 100%; }
 .overlay-impulse .item-overlay:after { z-index: -1; content: " "; width: 100%; height: 100%; background: $box-color; position: absolute; top: 0; left: 0; opacity: 0.6;}
 body.loading .overlay-impulse .item-overlay   { -webkit-transition: all 0 ease-in-out; -moz-transition:    all 0 ease-in-out; -o-transition:      all 0 ease-in-out; -ms-transition:     all 0 ease-in-out; }
 .overlay-impulse:hover .item-overlay,
 body.loading .overlay-impulse .item-overlay  { top: 0; height: 100%; }
+.overlay-impulse .overlay-social{top:50%; width:100%;left:0px; transform:translateY(-50%);position: absolute;}
 .overlay-impulse .item-title {   height: 75px; margin-bottom: 0; padding: 0 20px; }
 /*.overlay-impulse .item-title:after { display: block; content: " "; height: 2px; width: 35px; background: #FFF; }*/
 .overlay-impulse .item-title p { margin: 0; max-width: 227px; font-size: 20px; line-height: 24px; }
 .overlay-impulse .item-title p a {   text-decoration: none; }
 .overlay-impulse .item-title  .vertical-aligner { display: table-cell; height: 75px; vertical-align: middle; }
-.overlay-impulse .item-content { height: 100%; position: relative; width: 100%; padding: 20px;  max-height: calc(100% - 75px);}
+.overlay-impulse .item-content { height: 100%; position: relative; width: 100%; padding: 20px;  max-height: 100%;}
 .overlay-impulse .item-content p {  font-size: 12px; line-height: 16px; max-width: 250px; max-height: calc(100% - 40px); }
 .overlay-impulse .item-content p:last-child { margin-bottom: 0;  }
 .overlay-impulse .item-content .box-link {  }
