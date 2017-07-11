@@ -73,9 +73,9 @@
                         <h3 class="h2">What´s client say</h3>
                     </div>
                     <!--#include virtual="/statics/content/components/textCarousel.html"-->
-                    <div class="clearfix"></div>
+                    
                 </div>
-                
+                <div class="clearfix"></div>
             </div>
 
             

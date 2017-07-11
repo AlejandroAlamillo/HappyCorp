@@ -1590,6 +1590,7 @@ function validateForm() {
 /******************************/
 function tabs() {
     $(".js-tab-trigger").click(function (event) {
+        event.stopPropagation();
         event.preventDefault();
         $(this).closest(".js-tabs-container").find(".js-tab-trigger").removeClass("active");
         $(this).closest(".js-tabs-container").find(".js-tab-content").removeClass("active");
@@ -1733,7 +1734,7 @@ function verticalAlign() {
 /******************************/
 function stickToTop() {
     $(".js-stick-to-top").sticky({
-        'offset': 10,
+        'offset': 200,
         'mode': 'animate',
         'onStick': function () { alert("") },
     });
@@ -1766,11 +1767,11 @@ function bindTooltips() {
         $("*[data-tip]").each(function () {
             var self = $(this);
             var content = self.attr("data-tip");
-            
+
             self.after("<span class=\"tooltip js-tooltip\">" + content + "</span>");
-            
+
             var tooltip = null;
-            function setTooltipPosition() {               
+            function setTooltipPosition() {
                 var offset = self.offset();
                 tooltip = self.next(".js-tooltip");
                 var tooltipHeight = tooltip.height();
@@ -1778,7 +1779,7 @@ function bindTooltips() {
                 //tooltip.hide();
             }
             setTooltipPosition();
-            
+
             $(this).mouseenter(function () {
                 setTooltipPosition();
             });
@@ -1825,30 +1826,44 @@ function triggerJqueryUI() {
 /*********************************/
 
 function counter() {
-    $(window).scroll(function () {
-        var height = $(window).scrollTop();
-        var heightBanner = $('.banner-counter').offset().top-200;
-       
-        if (height > heightBanner && height<heightBanner+100) {
-           
-            $(".js-count").each(function () {
-                var n = 1;
-                var thisElement = $(this);
-                var nmax = parseInt(thisElement.attr("data-stop"));
-                var x = setInterval(function () {
-                    n = n + 1;
-                    thisElement.html(n);
-                    // If the count down is over, write some text 
-                    if (n > nmax) {
-                        clearInterval(x);
-                        var num = n + "+";
-                        thisElement.html(num)
-                    }
-                }, 1);
-            });
-        }
+
+    $('.banner-counter').each(function () {
+        var running = false;
+        var container = $(this);
+        $(window).scroll(function () {
+            if (!running) {
+                
+                var height = $(window).scrollTop();
+                var heightBanner = container.offset().top - 200;
+
+                if (height > heightBanner && height < heightBanner + 100) {
+                    running = true;
+                    container.find(".js-count").each(function () {
+                        var n = 1;
+                        var thisElement = $(this);
+                        var nmax = parseInt(thisElement.attr("data-stop"));
+                        var x = setInterval(function () {
+                            n = n + 1;
+                            thisElement.html(n);
+                            // If the count down is over, write some text 
+                            if (n > nmax) {
+                                clearInterval(x);
+                                var num = n + "+";
+                                thisElement.html(num)
+                            }
+                        }, 1);
+                    }, function () {
+                        running = false;
+                    });
+                }
+            }
+        });
+
+
+
     });
-   
+
+
 }
 
 
@@ -1883,8 +1898,8 @@ function updateLayout() {
     bindTooltips();
     updateSticky();
     bindMasonry();
-    
-    
+
+
 }
 
 

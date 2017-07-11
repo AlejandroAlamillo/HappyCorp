@@ -76,8 +76,13 @@
     <Content Include="assets\images\services-1.jpg" />
     <Content Include="assets\images\services-2.jpg" />
     <Content Include="assets\images\services-3.jpg" />
+    <Content Include="assets\images\services-img.jpg" />
+    <Content Include="assets\images\services-single.jpg" />
     <Content Include="assets\images\slider-img1.png" />
     <Content Include="assets\images\spider-profile.jpg" />
+    <Content Include="assets\images\tab-img.jpg" />
+    <Content Include="assets\scripts\chart.js" />
+    <Content Include="assets\scripts\graph.js" />
     <Content Include="packages.config" />
     <Content Include="bundleconfig.json" />
     <Content Include="assets\images\map\Thumbs.db" />
@@ -251,6 +256,7 @@
     <Content Include="statics\content\impulses\listImpulse.html" />
     <Content Include="statics\content\impulses\overlayImpulse.html" />
     <Content Include="statics\content\impulses\overlayImpulseSocial.html" />
+    <Content Include="statics\content\impulses\serviceIconImpulse.html" />
     <Content Include="statics\content\impulses\serviceImpulse.html" />
     <Content Include="statics\content\impulses\tagsImpulse.html" />
     <Content Include="statics\content\pages\blog\results.html" />
@@ -267,6 +273,7 @@
     <Content Include="statics\master\header\logo.html" />
     <Content Include="statics\master\header\user.html" />
     <Content Include="statics\master\html\head.html" />
+    <Content Include="statics\master\html\headGraph.html" />
     <Content Include="statics\master\shared\filtering\pagination.html" />
     <Content Include="statics\master\shared\nav\bottomTittle.html" />
     <Content Include="statics\master\shared\nav\breadcrumb.html" />
