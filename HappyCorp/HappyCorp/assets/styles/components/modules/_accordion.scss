@@ -1,12 +1,12 @@
 
 /********** START ACCORDION **********/
 .accordions-wrapper { margin-bottom: 40px; }
-.accordion { margin-bottom: 10px; }
-.accordion .accordion-heading { background-color: $box-color; cursor: pointer; display: block; padding: 10px; padding-right: 30px; position: relative; }
-.accordion .accordion-heading.active, .accordion .accordion-heading:hover { background: $primary-color;  color: #FFF;   @extend .smooth-transition  }
-.accordion .accordion-content { overflow: hidden; display: none; }
+.accordion {}
+.accordion .accordion-heading { background-color: #fff;border-top:1px solid #f2f2f2; border-left:1px solid #f2f2f2;border-right:1px solid #f2f2f2;cursor: pointer; display: block; position: relative;font-size: 20px;cursor: pointer;line-height: 30px;color: #17181a;font-weight: 700;    padding: 22px 0px 22px 50px; }
+.accordion .accordion-heading.active, .accordion .accordion-heading:hover {   }
+.accordion .accordion-content { overflow: hidden; display: none;border-left:1px solid #f2f2f2;border-right:1px solid #f2f2f2;padding: 7px 0px 6px 100px;}
 .accordion .accordion-content .accordion-content-inner { padding: 5px; }
-.accordion-indicator { position: absolute; right: 10px; top: 50%; height: 20px; margin-top: -10px; }
-.accordion .accordion-heading .accordion-indicator:before { content: "\f107"; }
-.accordion .accordion-heading.active .accordion-indicator:before { content: "\f106"; }
+.accordion-indicator {     top: 50%;height: 20px;margin-top: -10px;margin-right: 34px;color: #dadada; }
+.accordion .accordion-heading .accordion-indicator:before { content: "\f067"; }
+.accordion .accordion-heading.active .accordion-indicator:before { content: "\f068"; color:$active-color;  @extend .smooth-transition }
 /********** END ACCORDION **********/

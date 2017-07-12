@@ -27,8 +27,20 @@
                 </div>
 
                 <!--- Entries 3 column--->
+               <div class="section">
+                   <!--#include virtual="/statics/content/components/wrapperEntryImpulse.html"-->
+               </div> 
+               
+            </div>
+            <div class="false-section">
+                <div class="clearfix">
 
-               <!--#include virtual="/statics/content/components/wrapperEntryImpulse.html"-->
+
+                </div>
+            </div>
+            <div class="box-container">
+
+           
 
                 <!--- Text 2 colum--->
                 <!--#include virtual="/statics/content/components/component2Column.html"-->
@@ -40,11 +52,11 @@
             <!--#include virtual="/statics/content/components/bannerCounter.html"-->
 
             <!--- Wrapper Impulse -->
-            <div class="box-container ">
-                <div class="inner">
+            <div class="box-container section ">
+           
                       <!--#include virtual="/statics/content/components/wrapperImpulse.html"-->
                     <div class="clearfix"></div>
-                </div>
+               
             </div>
 
             <!--- Banner Form -->
@@ -52,13 +64,13 @@
 
             <!----Advisor---->
             <div class="box-container ">
-                <div class="inner">
+               
                     <div class="box-12">
                         <h2>Our Advisor</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <!--#include virtual="/statics/content/components/imageCarousel.html"-->
-                </div>
+                
             </div>
 
             <!---Purchase--->

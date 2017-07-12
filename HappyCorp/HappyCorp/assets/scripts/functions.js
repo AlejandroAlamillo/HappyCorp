@@ -382,8 +382,7 @@ function verticalAlign() {
 function stickToTop() {
     $(".js-stick-to-top").sticky({
         'offset': 200,
-        'mode': 'animate',
-        'onStick': function () { alert("") },
+        'mode': 'animate'
     });
 }
 function updateSticky() {
@@ -545,7 +544,7 @@ function updateLayout() {
     bindTooltips();
     updateSticky();
     bindMasonry();
-
+   
 
 }
 

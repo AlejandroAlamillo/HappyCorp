@@ -7,7 +7,10 @@
     3. Mobile
 */
 /*0. Global*/
-.box-container { max-width: $desktop; margin: 0 auto; clear: left; overflow: visible; padding: 0; }
+.box-container {    position: static;
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;}
 .box-container .box-container { width: 100%; }
 .inner { margin: $global-margin; padding: $global-padding; }
 .box-12, .box-11, .box-10, .box-9, .box-8, .box-7, .box-6, .box-5, .box-4, .box-3, .box-2, .box-1 { float: left; }

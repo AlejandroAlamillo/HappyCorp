@@ -68,6 +68,7 @@
   <ItemGroup>
     <Content Include="assets\images\about-image.jpg" />
     <Content Include="assets\images\Alamillo´s-logo-ancho.png" />
+    <Content Include="assets\images\Alamillo´s-logo-small.png" />
     <Content Include="assets\images\background-2.jpg" />
     <Content Include="assets\images\background-banner.png" />
     <Content Include="assets\images\image-1.jpg" />
@@ -78,6 +79,8 @@
     <Content Include="assets\images\services-3.jpg" />
     <Content Include="assets\images\services-img.jpg" />
     <Content Include="assets\images\services-single.jpg" />
+    <Content Include="assets\images\slider-img-1.png" />
+    <Content Include="assets\images\slider-img-2.png" />
     <Content Include="assets\images\slider-img1.png" />
     <Content Include="assets\images\spider-profile.jpg" />
     <Content Include="assets\images\tab-img.jpg" />
